@@ -39,8 +39,8 @@
         <hashTree/>
         <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Valores por Defecto para Petición HTTP">
           <stringProp name="TestPlan.comments">default de la api que utilizaremos</stringProp>
-          <stringProp name="HTTPSampler.domain">${__P(host,application)}</stringProp>
-          <stringProp name="HTTPSampler.port">${__P(port,3000)}</stringProp>
+          <stringProp name="HTTPSampler.domain">${__P(AUT_HOST,application)}</stringProp>
+          <stringProp name="HTTPSampler.port">${__P(AUT_PORT,3000)}</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>

@@ -106,7 +106,6 @@ pipeline {
           echo "=== Running JMeter tests with 5-minute timeout ==="
           timeout 300 docker exec ${JMETER_CONTAINER_NAME} jmeter -n \
             -t /work/jmeter/test-plan.jmx \
-			-Jhost=application -Jport=3000 \
             -l /work/out/results.jtl \
             -e -o /work/out/jmeter-report \
             -f \
