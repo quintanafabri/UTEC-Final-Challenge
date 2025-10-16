@@ -81,6 +81,7 @@ pipeline {
           docker run -d \
             --name ${JMETER_CONTAINER_NAME} \
             --network=${DOCKER_NETWORK} \
+			-p ${JMETER_PROM_PORT}:${JMETER_PROM_PORT} \
             --memory=1g \
             --memory-swap=2g \
             --shm-size=256m \
